@@ -7,27 +7,27 @@ function GymScreen({ navigation }) {
         <Text>Home screen</Text>
         <Button
           title="Biceps"
-          onPress={() => navigation.navigate('BicepsScreen')}
+          onPress={() => navigation.navigate('Biceps')}
         />
         <Button
           title="Espalda"
-          onPress={() => navigation.navigate('BackScreen')}
+          onPress={() => navigation.navigate('Back')}
         />
         <Button
           title="Triceps"
-          onPress={() => navigation.navigate('TricepsScreen')}
+          onPress={() => navigation.navigate('Triceps')}
         />
         <Button
           title="Pecho"
-          onPress={() => navigation.navigate('ChestScreen')}
+          onPress={() => navigation.navigate('Chest')}
         />
         <Button
           title="Piernas"
-          onPress={() => navigation.navigate('LegsScrreen')}
+          onPress={() => navigation.navigate('Legs')}
         />
         <Button
           title="Hombros"
-          onPress={() => navigation.navigate('ShouldersScreen')}
+          onPress={() => navigation.navigate('Shoulders')}
         />
       </View>
     );

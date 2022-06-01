@@ -2,7 +2,7 @@ import React, { useEffect, useCallback } from "react";
 import { ScrollView, Text,Image} from "react-native";
 import body from "../styles/Body";
 const DATA = [{titulo:'Dominadas',imagen:require('../assets/Dominadas.png'),explicacion:''},
-{titulo:'Jalón al Pecho',imagen:require('../assets/JalonPecho.png'),explicacion:''},
+{titulo:'Jalón al Pecho',imagen:require('../assets/JalonPecho.jpg'),explicacion:''},
 {titulo:'Remo con mancuernas',imagen:require('../assets/EspaldaMancuernas.png'),explicacion:''}
 ]
 function BackScreen({ navigation }) {
