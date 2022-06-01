@@ -1,15 +1,15 @@
 import React, { useEffect, useCallback } from "react";
 import { ScrollView, Text,Image} from "react-native";
 import body from "../styles/body";
-const DATA = [{titulo:'Extension de Triceps en Polea Alta',imagen:require('../assets/ExtensionTricepsPolea.jpg'),explicacion:''},
-{titulo:'Extensión de Triceps con Mancuerna',imagen:require('../assets/ExtensionTricepsMancuerna.jpg'),explicacion:''},
-{titulo:'Extensión de Triceps en banco',imagen:require('../assets/ExtensionTricepsBanco.png'),explicacion:''}
+const DATA = [
+{titulo:'Extension de Triceps en Polea Alta',imagen:require('../assets/ExtensionTricepsPolea.jpg'),explicacion:'Realizamos una extensión de los codos, llevando el mango de la polea hacia abajo, sin despegar los codos de los lados del cuerpo y únicamente movilizando el antebrazo. Espiramos al final del movimiento y regresamos lentamente a la posición inicial.'},
+{titulo:'Extensión de Triceps con Mancuerna',imagen:require('../assets/ExtensionTricepsMancuerna.jpg'),explicacion:'Para hacer una extensión del músculo tríceps, acuéstate con una pesa en la mano. Apunta la parte superior del brazo hacia arriba, con el codo flexionado en un ángulo de 90 grados. Endereza el codo lentamente, moviendo la pesa hacia arriba. Luego, baja lentamente la pesa a la posición inicial.'},
+{titulo:'Extensión de Triceps en banco',imagen:require('../assets/ExtensionTricepsBanco.png'),explicacion:'Siempre debes mantener levemente flexionados los codos de manera de mantener constante la presión sobre los triceps. Lentamente debes flexionar los codos para bajar la parte superior del cuerpo hacia el suelo, hasta alcanzar un ángulo de 90 grados formado con los brazos. La espalda debe permanecer cerca del banco.'}
 ]
 function TricepsScreen({ navigation }) {
     return (
         <ScrollView style={body.contenedor}>
-        <Text style={body.text}>La espalda es una zona muscular muy completa y compleja. Tenemos muchos músculos con distintas funciones y para poder entrenar cada uno de ello debemos realiar diversos ejercicios. Para ello 
-            tenemos nos ejemplos que son muy completos con los que podemos entrenar para mejorar nuestra espalda </Text>
+        <Text style={body.text}>Quizás no lo sepas, pero el músculo más grande de tus brazos no es el bíceps, sino el tríceps, con sus tres cabezas. Así que nunca tendrás unas extremidades grandes y fuertes si no atacas correctamente y a conciencia sus tres partes. </Text>
             <FlatList
                 data={DATA}
                 renderItem={({ item }) => {
