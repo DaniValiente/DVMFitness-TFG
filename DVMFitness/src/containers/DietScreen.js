@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { ScrollView, Text,Image, FlatList} from "react-native";
-import body from "../styles/Body";
+import body from "../styles/body";
 const DATA =[{titulo:'Tortitas de plátano',imagen: require('../assets/image.png'),ingredientes:'Ingredientes: - 2 huevos - 1 plátano y medio',receta:'Cortamos la fruta en trozos pequeños y lo ponemos en un vaso para posteriormente batirlo junto a los huevos.-Procedamos a batirlo durante varios segundos hasta que quede una mezcla homogénea y sin grumos. -Cuando tenemos nuestra mezcla le vertimos en una sarten caliente y esperamos que las tortitas tengan burbujas para darles la vuelta. -Una vez dada la vuelta espeamos que estén a nuestro gusto y listo. Ya tendríamos un delicioso y saludable desayuno o merienda.'},
 {titulo:'',imagen: require('../assets/image.png'),ingredientes:'',receta:''},
 {titulo:'',imagen: require('../assets/image.png'),ingredientes:'',receta:''}

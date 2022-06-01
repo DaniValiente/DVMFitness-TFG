@@ -1,7 +1,7 @@
-import React, { useEffect, useCallback } from "react";
+import React from "react";
 import { ScrollView, Text,Image} from "react-native";
-import body from "../styles/Body";
-function AboutMeScreen({ navigation }) {
+import body from "../styles/body";
+function AboutMeScreen() {
     return (
         <ScrollView style={body.contenedor}>
         <Text>Mi nombre es Daniel Valiente, he sido el desarrollador de esta app enfocada en el mundo fitness, tengo 20 años y soy sevillano.

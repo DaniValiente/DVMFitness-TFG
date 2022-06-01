@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { View, Text, Button } from "react-native";
-import body from "../styles/Body";
+import body from "../styles/body";
 function GymScreen({ navigation }) {
     return (
       <View style={body.contenedor}>

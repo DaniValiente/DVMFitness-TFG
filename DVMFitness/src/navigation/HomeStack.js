@@ -6,18 +6,18 @@ import ChestScreen from "../containers/ChestScreen";
 import BackScreen from "../containers/BackScreen";
 import LegsScreen from "../containers/LegsScreen";
 import ShouldersScreen from "../containers/ShouldersScreen";
-const HomeStack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
 
 function HomeStack() {
   return (
-    <HomeStack.Navigator>
-      <HomeStack.Screen name="Biceps" component={BicepsScreen} />
-      <HomeStack.Screen name="Triceps" component={TricepsScreen} />
-      <HomeStack.Screen name="Chest" component={ChestScreen} />
-      <HomeStack.Screen name="Back" component={BackScreen} />
-      <HomeStack.Screen name="Legs" component={LegsScreen} />
-      <HomeStack.Screen name="Shoulders" component={ShouldersScreen} />
-    </HomeStack.Navigator>
+    <Stack.Navigator>
+      <Stack.Screen name="Biceps" component={BicepsScreen} />
+      <Stack.Screen name="Triceps" component={TricepsScreen} />
+      <Stack.Screen name="Chest" component={ChestScreen} />
+      <Stack.Screen name="Back" component={BackScreen} />
+      <Stack.Screen name="Legs" component={LegsScreen} />
+      <Stack.Screen name="Shoulders" component={ShouldersScreen} />
+    </Stack.Navigator>
   );
 }
 export default HomeStack;

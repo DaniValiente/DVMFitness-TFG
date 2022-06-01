@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback } from "react";
 import { ScrollView, Text,Image} from "react-native";
-import body from "../styles/Body";
+import body from "../styles/body";
 const DATA = [{titulo:'Curl en Polea',imagen:require('../assets/CurlPolea.png'),explicacion:''},
 {titulo:'Curl Scott',imagen:require('../assets/CurlScott.jpg'),explicacion:''},
 {titulo:'Curl con mancuernas',imagen:require('../assets/CurlMancuernas.jpg'),explicacion:''}

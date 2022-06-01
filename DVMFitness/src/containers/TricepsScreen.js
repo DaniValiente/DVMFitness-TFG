@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback } from "react";
 import { ScrollView, Text,Image} from "react-native";
-import body from "../styles/Body";
+import body from "../styles/body";
 const DATA = [{titulo:'Extension de Triceps en Polea Alta',imagen:require('../assets/ExtensionTricepsPolea.jpg'),explicacion:''},
 {titulo:'Extensión de Triceps con Mancuerna',imagen:require('../assets/ExtensionTricepsMancuerna.jpg'),explicacion:''},
 {titulo:'Extensión de Triceps en banco',imagen:require('../assets/ExtensionTricepsBanco.png'),explicacion:''}

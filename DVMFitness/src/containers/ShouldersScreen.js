@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback } from "react";
 import { ScrollView, Text,Image} from "react-native";
-import body from "../styles/Body";
+import body from "../styles/body";
 const DATA = [{titulo:'Press Militar',imagen:require('../assets/PressMilitar.jpg'),explicacion:''},
 {titulo:'Elevaciones Frontales con Disco',imagen:require('../assets/ElevacionesFrontales.jpg'),explicacion:''},
 {titulo:'Elevaciones Laterales Sentado',imagen:require('../assets/ElevacionLateral.png'),explicacion:''}
