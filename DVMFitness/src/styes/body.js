@@ -11,6 +11,12 @@ const body = StyleSheet.create({
         width: '50%',
         paddingVertical: 5,
         alignSelf: 'center'
+    },
+    title:{
+
+    },
+    text:{
+        color:'white'
     }
 });
     export default body;

@@ -1,3 +1,5 @@
+import AboutMeScreen from "../containers/AboutMeScreen";
+import HomeStack from "./HomeStack";
 const Tab = createBottomTabNavigator();
 
 export default function App() {
@@ -11,7 +13,7 @@ export default function App() {
                 iconName = focused
                   ? 'ios-information-circle'
                   : 'ios-information-circle-outline';
-              } else if (route.name === 'Settings') {
+              } else if (route.name === 'AboutMe') {
                 iconName = focused ? 'paw' : 'paw-outline';
               }
               
@@ -21,8 +23,8 @@ export default function App() {
             tabBarInactiveTintColor: 'grey',
           })}
         >
-        <Tab.Screen options={{ headerShown: false }} name="Home" component={HomeStackScreen} />
-        <Tab.Screen options={{ headerShown: false }} name="Settings" component={SettingsStackScreen} />
+        <Tab.Screen options={{ headerShown: false }} name="Home" component={HomeStack} />
+        <Tab.Screen options={{ headerShown: false }} name="AboutMe" component={AboutMeScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );

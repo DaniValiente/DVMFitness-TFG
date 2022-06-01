@@ -1,11 +1,11 @@
 import React, { useEffect, useCallback } from "react";
 import { ScrollView, Text,Image} from "react-native";
-import body from "../styles/Body";
-const DATA = [{titulo:'Dominadas',imagen:require('../assets/Dominadas.png'),explicacion:''},
-{titulo:'Jalón al Pecho',imagen:require('../assets/JalonPecho.png'),explicacion:''},
-{titulo:'Remo con mancuernas',imagen:require('../assets/EspaldaMancuernas.png'),explicacion:''}
+import body from "../styles/body";
+const DATA = [{titulo:'Press Banca inclinado',imagen:require('../assets/PressBancaInclinado.jpg'),explicacion:''},
+{titulo:'Flexiones',imagen:require('../assets/Flexiones.jpg'),explicacion:''},
+{titulo:'Cruce con Poleas',imagen:require('../assets/CrucePoleas.jpg'),explicacion:''}
 ]
-function BackScreen({ navigation }) {
+function ChestScreen({ navigation }) {
     return (
         <ScrollView style={body.contenedor}>
         <Text style={body.text}>La espalda es una zona muscular muy completa y compleja. Tenemos muchos músculos con distintas funciones y para poder entrenar cada uno de ello debemos realiar diversos ejercicios. Para ello 
@@ -27,8 +27,7 @@ function BackScreen({ navigation }) {
                     )
                 }}
             />
-           
       </ScrollView>
     );
   }
-  export default BackScreen;
+  export default ChestScreen;
