@@ -9,8 +9,7 @@ function BicepsScreen({ route }) {
     console.log(route)
     return (
         <ScrollView style={body.contenedor}>
-        <Text style={body.text}>La espalda es una zona muscular muy completa y compleja. Tenemos muchos músculos con distintas funciones y para poder entrenar cada uno de ello debemos realiar diversos ejercicios. Para ello 
-            tenemos nos ejemplos que son muy completos con los que podemos entrenar para mejorar nuestra espalda </Text>
+        <Text style={body.text}>El bíceps es un músculo que podemos entrenar de infinidad de formas distintas y casi siempre recurrimos a os mismos ejercicios.Te dej los trss mejores ejerccicios en mi opinión para agrander a un mas tus brazos </Text>
             <FlatList
                 data={DATA}
                 renderItem={({ item }) => {

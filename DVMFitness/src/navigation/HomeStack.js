@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import BicepsScreen from "../containers/BicepsScreen";
 import TricepsScreen from "../containers/TricepsScreen";
@@ -11,8 +11,9 @@ const Stack = createNativeStackNavigator();
 function HomeStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Biceps" component={BicepsScreen} />
+      
       <Stack.Screen name="Triceps" component={TricepsScreen} />
+      <Stack.Screen name="Biceps" component={BicepsScreen} />
       <Stack.Screen name="Chest" component={ChestScreen} />
       <Stack.Screen name="Back" component={BackScreen} />
       <Stack.Screen name="Legs" component={LegsScreen} />

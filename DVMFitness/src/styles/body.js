@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 const body = StyleSheet.create({
     contenedor: {
-        backgroundColor: 'rgb(215,171,108)',
+        backgroundColor:'#000000',
         height: '100%'
     },
     button: {
@@ -13,10 +13,16 @@ const body = StyleSheet.create({
         alignSelf: 'center'
     },
     title:{
-
+        color:'#FFFFFF',
+        fontSize:22
     },
     text:{
-        color:'white'
+        color:'#FFFFFF',
+        fontSize:11
+    },
+    image:{
+        width:120,
+        height:120
     }
 });
     export default body;

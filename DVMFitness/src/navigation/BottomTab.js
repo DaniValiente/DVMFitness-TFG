@@ -1,14 +1,23 @@
+import * as React from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Ionicons from 'react-native-vector-icons/Ionicons'
 import AboutMeScreen from "../containers/AboutMeScreen";
 import DietScreen from "../containers/DietScreen";
+import GymScreen from "../containers/GymScreen";
 import HomeStack from "./HomeStack";
 const Tab = createBottomTabNavigator();
 
-export default function App() {
+const BottomTabNavigator=()=> {
   return (
-    <NavigationContainer>
-      <Tab.Navigator
-      screenOptions={({ route }) => ({
-            tabBarIcon: ({ focused, color, size }) => {
+     
+    <Tab.Navigator screenOptions={({ route }) => ({
+          tabBarStyle:{
+            backgroundColor:'rgb(46.34.17)',
+          },
+          tabBarActiveTintColor:'rgb(129,93,39)',
+          tabBarActiveBackgroundColor:'rgb(40,30,10)',
+          tabBarInactiveTintColor:'rgb(255,181,118)',
+          tabBarIcons: ({ focused, color, size }) => {
               let iconName;
               if (route.name === 'Gym') {
                 iconName = focused
@@ -30,7 +39,8 @@ export default function App() {
         <Tab.Screen options={{ headerShown: false }} name="Gym" component={HomeStack} />
         <Tab.Screen options={{ headerShown: false }} name="Diet" component={DietScreen} />
         <Tab.Screen options={{ headerShown: false }} name="AboutMe" component={AboutMeScreen} />
-      </Tab.Navigator>
-    </NavigationContainer>
+      </Tab.Navigator>  
+  
   );
 }
+export default BottomTabNavigator;

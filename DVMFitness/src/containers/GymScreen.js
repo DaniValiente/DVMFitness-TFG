@@ -11,7 +11,7 @@ function GymScreen({ navigation }) {
         />
         <Button
           title="Espalda"
-          onPress={() => navigation.navigate('Back')}
+          onPress={() => navigation.navigate('BackScreen')}
         />
         <Button
           title="Triceps"
