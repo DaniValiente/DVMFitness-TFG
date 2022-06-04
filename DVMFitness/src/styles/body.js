@@ -23,6 +23,10 @@ const body = StyleSheet.create({
     image:{
         width:120,
         height:120
+    },
+    introduccion:{
+        color:'#FFFFFF',
+        fontSize:14
     }
 });
     export default body;

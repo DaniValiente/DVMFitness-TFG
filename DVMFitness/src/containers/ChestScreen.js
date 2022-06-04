@@ -9,8 +9,8 @@ const DATA = [
 function ChestScreen({ route }) {
     console.log(route)
     return (
-        <ScrollView style={body.contenedor}>
-        <Text style={body.text}>Las rutinas de pecho son las preferidas por el usuario medio del gimnasio. Un pectoral desarrollado es la seña de identidad de un hombre grande y fuerte.  </Text>
+        <View style={body.contenedor}>
+        <Text style={body.introduccion}>Las rutinas de pecho son las preferidas por el usuario medio del gimnasio. Un pectoral desarrollado es la seña de identidad de un hombre grande y fuerte.  </Text>
             <FlatList
                 data={DATA}
                 renderItem={({ item }) => {
@@ -28,7 +28,7 @@ function ChestScreen({ route }) {
                     )
                 }}
             />
-      </ScrollView>
+      </View>
     );
   }
   export default ChestScreen;

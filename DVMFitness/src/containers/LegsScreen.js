@@ -9,8 +9,8 @@ const DATA = [
 function LegsScreen({ route }) {
     console.log(route)
     return (
-        <ScrollView style={body.contenedor}>
-        <Text style={body.text}>El entrenamiento de pierna es clave para transformar el cuerpo, ya sea para perder grasa o para ganar volumen. Un entrenamiento enfocado en el tren inferior significa que más de la mitad de tu cuerpo va a estar trabajando durante ese entrenamiento.</Text>
+        <View style={body.contenedor}>
+        <Text style={body.introduccion}>El entrenamiento de pierna es clave para transformar el cuerpo, ya sea para perder grasa o para ganar volumen. Un entrenamiento enfocado en el tren inferior significa que más de la mitad de tu cuerpo va a estar trabajando durante ese entrenamiento.</Text>
             <FlatList
                 data={DATA}
                 renderItem={({ item }) => {
@@ -28,7 +28,7 @@ function LegsScreen({ route }) {
                     )
                 }}
             />
-      </ScrollView>
+      </View>
     );
   }
   export default LegsScreen;

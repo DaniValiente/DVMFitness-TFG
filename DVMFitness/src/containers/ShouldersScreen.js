@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ScrollView, Text,Image,FlatList} from "react-native";
+import {View, Text,Image,FlatList} from "react-native";
 import body from "../styles/body";
 const DATA = [
 {titulo:'Press Militar',imagen:require('../assets/PressMilitar.jpg'),explicacion:'Cogemos la barra con las manos en pronación (con las palmas mirando hacia adelante). Las manos deben situarse a una anchura algo superior a la de los hombros.  Sacamos la barra de su soporte y la colocamos sobre la parte alta de nuestro pecho, a la altura de nuestras clavículas.'},
@@ -9,7 +9,7 @@ const DATA = [
 function ShuldersScreen({ route }) {
     console.log(route)
     return (
-        <ScrollView style={body.contenedor}>
+        <View style={body.contenedor}>
         <Text style={body.text}>Los hombros son, quizás, uno de los grupos más infravalorados cuando hablamos de entrenamientos en gimnasio y sin embargo son al mismo tiempo quizás la parte de nuestro cuerpo que más deberíamos cuidar y entrenar junto con nuestro core. Por su estructura, los hombros intervienen en infinidad de movimientos y acciones de nuestro día a día del tren superior y suelen estar no atrofiados pero sí atrasados muscularmente hablando.</Text>
             <FlatList
                 data={DATA}
@@ -28,7 +28,7 @@ function ShuldersScreen({ route }) {
                     )
                 }}
             />
-      </ScrollView>
+      </View>
     );
   }
   export default ShuldersScreen;

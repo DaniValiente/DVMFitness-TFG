@@ -36,7 +36,7 @@ const BottomTabNavigator=()=> {
             tabBarInactiveTintColor: 'grey',
           })}
         >
-        <Tab.Screen options={{ headerShown: false }} name="Gym" component={HomeStack} />
+        <Tab.Screen options={{ headerShown: false }} name="Gym" component={GymScreen} />
         <Tab.Screen options={{ headerShown: false }} name="Diet" component={DietScreen} />
         <Tab.Screen options={{ headerShown: false }} name="AboutMe" component={AboutMeScreen} />
       </Tab.Navigator>  

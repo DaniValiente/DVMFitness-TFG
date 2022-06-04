@@ -8,8 +8,8 @@ const DATA = [{titulo:'Curl en Polea',imagen:require('../assets/CurlPolea.png'),
 function BicepsScreen({ route }) {
     console.log(route)
     return (
-        <ScrollView style={body.contenedor}>
-        <Text style={body.text}>El bíceps es un músculo que podemos entrenar de infinidad de formas distintas y casi siempre recurrimos a os mismos ejercicios.Te dej los trss mejores ejerccicios en mi opinión para agrander a un mas tus brazos </Text>
+        <View style={body.contenedor}>
+        <Text style={body.introduccion}>El bíceps es un músculo que podemos entrenar de infinidad de formas distintas y casi siempre recurrimos a os mismos ejercicios.Te dej los trss mejores ejerccicios en mi opinión para agrander a un mas tus brazos </Text>
             <FlatList
                 data={DATA}
                 renderItem={({ item }) => {
@@ -27,7 +27,7 @@ function BicepsScreen({ route }) {
                     )
                 }}
             />
-      </ScrollView>
+      </View>
     );
   }
   export default BicepsScreen;

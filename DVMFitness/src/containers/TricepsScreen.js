@@ -9,8 +9,8 @@ const DATA = [
 function TricepsScreen({ route }) {
     console.log(route)
     return (
-        <ScrollView style={body.contenedor}>
-        <Text style={body.text}>Quizás no lo sepas, pero el músculo más grande de tus brazos no es el bíceps, sino el tríceps, con sus tres cabezas. Así que nunca tendrás unas extremidades grandes y fuertes si no atacas correctamente y a conciencia sus tres partes. </Text>
+        <View style={body.contenedor}>
+        <Text style={body.introduccion}>Quizás no lo sepas, pero el músculo más grande de tus brazos no es el bíceps, sino el tríceps, con sus tres cabezas. Así que nunca tendrás unas extremidades grandes y fuertes si no atacas correctamente y a conciencia sus tres partes. </Text>
             <FlatList
                 data={DATA}
                 renderItem={({ item }) => {
@@ -28,7 +28,7 @@ function TricepsScreen({ route }) {
                     )
                 }}
             />
-      </ScrollView>
+      </View>
     );
   }
   export default TricepsScreen;

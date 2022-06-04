@@ -11,13 +11,13 @@ const Stack = createNativeStackNavigator();
 function HomeStack() {
   return (
     <Stack.Navigator>
-      
-      <Stack.Screen name="Triceps" component={TricepsScreen} />
+      <Stack.Screen name="Shoulders" component={ShouldersScreen} />
+      <Stack.Screen name="Back" component={BackScreen} />
       <Stack.Screen name="Biceps" component={BicepsScreen} />
       <Stack.Screen name="Chest" component={ChestScreen} />
-      <Stack.Screen name="Back" component={BackScreen} />
+      <Stack.Screen name="Triceps" component={TricepsScreen} />
       <Stack.Screen name="Legs" component={LegsScreen} />
-      <Stack.Screen name="Shoulders" component={ShouldersScreen} />
+     
     </Stack.Navigator>
   );
 }
