@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ScrollView, Text,Image,FlatList} from "react-native";
+import { View, Text,Image,FlatList} from "react-native";
 import body from "../styles/body";
 const DATA = [
 {titulo:'Press Banca inclinado',imagen:require('../assets/PressBancaInclinado.jpg'),explicacion:'Túmbate en el banco boca arriba y apoya los pies en el suelo. Asegúrate de que los omóplatos (escápulas) estén bien apoyados en el banco. Coge la barra con las manos separadas el ancho de los hombros y sácala de los soportes con cuidado hasta que quede por encima de tu pecho, con los brazos completamente extendidos'},
@@ -9,7 +9,8 @@ const DATA = [
 function ChestScreen({ route }) {
     console.log(route)
     return (
-        <View style={body.contenedor}>
+       
+       <View style={body.contenedor}>
         <Text style={body.introduccion}>Las rutinas de pecho son las preferidas por el usuario medio del gimnasio. Un pectoral desarrollado es la seña de identidad de un hombre grande y fuerte.  </Text>
             <FlatList
                 data={DATA}

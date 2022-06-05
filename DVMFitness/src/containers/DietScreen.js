@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ScrollView, Text,Image, FlatList} from "react-native";
+import { View, Text,Image, FlatList} from "react-native";
 import body from "../styles/body";
 const DATA =[
 {titulo:'Tortitas de plátano sin gluten',imagen: require('../assets/tortitas.jpg'),ingredientes:'Ingredientes: - 2 huevos - 1 plátano y medio',receta:'Cortamos la fruta en trozos pequeños y lo ponemos en un vaso para posteriormente batirlo junto a los huevos.-Procedamos a batirlo durante varios segundos hasta que quede una mezcla homogénea y sin grumos. -Cuando tenemos nuestra mezcla le vertimos en una sarten caliente y esperamos que las tortitas tengan burbujas para darles la vuelta. -Una vez dada la vuelta espeamos que estén a nuestro gusto y listo. Ya tendríamos un delicioso y saludable desayuno o merienda.'},
@@ -8,7 +8,8 @@ const DATA =[
 ]
 function DietScreen({ navigation }) {
     return (
-      <View style={body.contenedor}>
+     
+     <View style={body.contenedor}>
       <Text style={body.introduccion}>Para conseguir los objetivos propuestos por cada ususario debemos mejorar nuestra alimentación ya que es una de las mayores claves no solo para mejorar la estética de nuestro cuerpo sino tambien para mejorar nuestra salud y bienestar.
       Para ello os voy a recomendar 3 recetas fáciles, rápidas y saludables</Text>
       <FlatList

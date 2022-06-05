@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ScrollView, Text,Image,FlatList} from "react-native";
+import {View, Text,Image,FlatList} from "react-native";
 import body from "../styles/body";
 const DATA = [
 {titulo:'Extension de Triceps en Polea Alta',imagen:require('../assets/ExtensionTricepsPolea.jpg'),explicacion:'Realizamos una extensión de los codos, llevando el mango de la polea hacia abajo, sin despegar los codos de los lados del cuerpo y únicamente movilizando el antebrazo. Espiramos al final del movimiento y regresamos lentamente a la posición inicial.'},
@@ -9,7 +9,8 @@ const DATA = [
 function TricepsScreen({ route }) {
     console.log(route)
     return (
-        <View style={body.contenedor}>
+       
+       <View style={body.contenedor}>
         <Text style={body.introduccion}>Quizás no lo sepas, pero el músculo más grande de tus brazos no es el bíceps, sino el tríceps, con sus tres cabezas. Así que nunca tendrás unas extremidades grandes y fuertes si no atacas correctamente y a conciencia sus tres partes. </Text>
             <FlatList
                 data={DATA}

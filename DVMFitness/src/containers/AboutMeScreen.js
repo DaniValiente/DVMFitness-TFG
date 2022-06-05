@@ -6,7 +6,7 @@ function AboutMeScreen() {
         <ScrollView style={body.contenedor}>
         <Text style={body.introduccion}>Mi nombre es Daniel Valiente, he sido el desarrollador de esta app enfocada en el mundo fitness, tengo 20 años y soy sevillano.
          Mi objetivo con esta aplicación era juntar y mezclar mis dos pasioness, la informatica y el mundo fitness </Text>
-         <Image style={body.image} source={require('../assets/image.jpg')}></Image>
+         <Image style={body.mifoto} source={require('../assets/image.jpg')}></Image>
       </ScrollView>
     );
   }

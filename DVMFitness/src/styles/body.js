@@ -5,15 +5,23 @@ const body = StyleSheet.create({
         height: '100%'
     },
     button: {
-        backgroundColor: 'rgb(129,93,39)',
+        backgroundColor: '#FF2D00',
         borderRadius: 5,
         margin: 20,
         width: '50%',
         paddingVertical: 5,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        color:"#f194ff" 
     },
     title:{
+        color:'#FF0000',
+        alignSelf: 'center',
+        fontSize:22
+    },
+    gym:{
         color:'#FFFFFF',
+        fontWeight:'bold',
+        alignSelf: 'center',
         fontSize:22
     },
     text:{
@@ -22,7 +30,13 @@ const body = StyleSheet.create({
     },
     image:{
         width:120,
+        alignSelf: 'center',
         height:120
+    },
+    mifoto:{
+        width:240,
+        alignSelf: 'center',
+        height:240
     },
     introduccion:{
         color:'#FFFFFF',

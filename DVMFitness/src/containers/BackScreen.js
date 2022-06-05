@@ -8,6 +8,7 @@ const DATA = [{titulo:'Dominadas',imagen:require('../assets/Domindas.png'),expli
 function BackScreen({ route }) {
     console.log(route)
     return (
+        
         <View style={body.contenedor}>
         <Text style={body.introduccion}>La espalda es una zona muscular muy completa y compleja. Tenemos muchos músculos con distintas funciones y para poder entrenar cada uno de ello debemos realiar diversos ejercicios. Para ello 
             tenemos nos ejemplos que son muy completos con los que podemos entrenar para mejorar nuestra espalda </Text>

@@ -9,6 +9,7 @@ const DATA = [
 function ShuldersScreen({ route }) {
     console.log(route)
     return (
+        
         <View style={body.contenedor}>
         <Text style={body.text}>Los hombros son, quizás, uno de los grupos más infravalorados cuando hablamos de entrenamientos en gimnasio y sin embargo son al mismo tiempo quizás la parte de nuestro cuerpo que más deberíamos cuidar y entrenar junto con nuestro core. Por su estructura, los hombros intervienen en infinidad de movimientos y acciones de nuestro día a día del tren superior y suelen estar no atrofiados pero sí atrasados muscularmente hablando.</Text>
             <FlatList
